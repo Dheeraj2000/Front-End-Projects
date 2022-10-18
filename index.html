@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Art GALLARY</title>
+   <link rel="shortcut icon" href="/images/favicon1.ico">
+   
+   <link rel="stylesheet" href="style1.css" />
+   <!-- <link rel="stylesheet" href="style.css"/> -->
+</head>
+<body>
+<form name ="artist" method="get" action="" onsubmit="return validateForm()">
+
+    <div id="header" >
+        <img src="images/iiit.jpg" alt="logo"  id="logo">
+        <p id="project">Application Programming Project <br></p><br>
+    </div>
+
+    <div id="searchBox">
+        <input type="search" name="search" placeholder="Search titles" /><input type="submit" value="Search" />
+    </div>   
+    <div id="settingsBox">
+        <select name="actions">
+            <option value="0">Actions</option>
+            <option value="1">Archive</option>
+            <option value="2">Delete</option>   
+        </select>
+        <input type="submit" value="Apply" />
+        <select name="filter">
+            <option value="0">Genre</option>
+            <option value="1">History Painting</option>
+            <option value="2">Portrait</option>   
+            <option value="3">Genre Painting</option>       
+            <option value="4">Landscape</option>   
+            <option value="5">Seascape</option>
+            <option value = "6"> Cityscape</option>
+            <option value="7">Still Life</option>    
+        </select>
+        <input type="submit" value="Filter" />
+    </div>
+    <div id="main-table">
+        <table id="only-table">
+            <caption>Paintings</caption>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Artist</th>    
+                    <th scope="col">Year</th> 
+                    <th scope="col">Genre</th> 
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="10" /></td>
+                    <td><img src="images/1.jpg" alt="Self Portrait" class="artThumb"/></td>
+                    <td><em>Self Portrait</em></td>
+                    <td>Amrita Shergil </td>           
+                    <td>1931</td>
+                    <td>Portrait</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="20"/></td>
+                    <td><img src="images/2.jpg" alt="Bharat Mata" class="artThumb"/></td>
+                    <td><em>Bharat Mata</em></td>
+                    <td>Abindranath Tagore </td>           
+                    <td>1905</td>
+                    <td>Desh Bhakti </td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>         
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="30"/></td>
+                    <td><img src="images/3.jpg" class="artThumb" alt="Shakuntala" /></td>
+                    <td><em>Shakuntala</em></td>
+                    <td>Raja Ravi Verma        </td>           
+                    <td>1900's</td>
+                    <td>Mahabharat</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>   
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="40"/></td>
+                    <td><img src="images/4.jpg" class="artThumb" alt="Bapuji" /></td>
+                    <td><em>Bapuji</em></td>
+                    <td>Nandlal Bose    </td>           
+                    <td>1930</td>
+                    <td>Realism</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit" /> Edit</a></button></td>
+                </tr>  
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="50"/></td>
+                    <td><img src="images/5.jpg" class="artThumb" alt="Mahishasura" /></td>
+                    <td><em>Mahishasura</em></td>
+                    <td>Tyeb Mehta     </td>           
+                    <td>2005</td>
+                    <td>Neo-Classicism</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr> 
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="50"/></td>
+                    <td><img src="images/6.jpg" class="artThumb" alt="Self-Portrait" /></td>
+                    <td><em>Self-Portrait</em></td>
+                    <td>Rabindranath Tagore     </td>           
+                    <td>1924</td>
+                    <td>Neo-Classicism</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="50"/></td>
+                    <td><img src="images/7.jpg" class="artThumb" alt="Three Pujarins" /></td>
+                    <td><em>Three Pujarins</em></td>
+                    <td>Jamini Roy     </td>           
+                    <td>----</td>
+                    <td>Neo-Classicism</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="50"/></td>
+                    <td><img src="images/8.jpg" class="artThumb" alt="Horses" /></td>
+                    <td><em>Horses</em></td>
+                    <td>M F Husain     </td>           
+                    <td>2008</td>
+                    <td>Neo-Classicism</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="50"/></td>
+                    <td><img src="images/9.jpg" class="artThumb" alt="Krishna(Spring in Kullu)" /></td>
+                    <td><em>Krishna(Spring in Kullu)</em></td>
+                    <td>Nicholas Roerich     </td>           
+                    <td>1979</td>
+                    <td>Neo-Classicism</td>  
+                    <td><button><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="50"/></td>
+                    <td><img src="images/10.jpg" class="artThumb" alt="Bindu" /></td>
+                    <td><em>Bindu</em></td>
+                    <td>S H Raza     </td>           
+                    <td>1946</td>
+                    <td>Neo-Classicism</td>  
+                    <td><button ><a href="#"><img src="images/edit.png" alt="" id="edit"/> Edit</a></button></td>
+                </tr> 
+            </tbody>
+        </table>
+    </div> 
+    </div>
+
+
+    
+</form>
+<script type="text/javascript" src="javaScript.js"></script>
+</body>
+
+</html>
